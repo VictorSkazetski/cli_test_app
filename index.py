@@ -124,7 +124,7 @@ def get_imgs_urls(url):
         exit(1)
     else:
         soup = send_req(url)
-        links = [a['href'] for a in soup.find_all('a', href=re.compile('files/wallpapers'))]
+        links = [a['href'] for a in soup.find_all('a', href=re.compile('wallpapers'))]
         return links
 
 
